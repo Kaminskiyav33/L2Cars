@@ -15,9 +15,12 @@ public class ExecuteClass {
         arrayList.add(new Car("Тойота","седан"));
 
         System.out.println(arrayList);
+
+        System.out.println("\n Один список с сортировкой:");
+
         arrayList.sort((o1, o2) -> o1.getModel().compareTo(o2.getModel()));
         System.out.println(arrayList);
-
+        System.out.println("\n Много списков с группировкой:");
         System.out.println(groupByType(arrayList));
     }
 
